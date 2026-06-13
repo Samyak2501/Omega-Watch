@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the OMEGA Smartwatch Collection — precision engineering meets timeless elegance.">
+    <title>OMEGA — Premium Smartwatch Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loader overlay -->
+    <div class="loader-overlay" id="loaderOverlay">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading... <span id="loaderPct">0%</span></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">OMEGA<span class="logo-dot">.</span></div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Collection</a>
+            <a href="#" class="nav-link">Experience</a>
+            <a href="#" class="nav-link">Craft</a>
+            <a href="#" class="nav-link nav-cta">Pre-Order</a>
+        </div>
+        <button class="nav-menu-btn" id="navMenuBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-video-wrap">
+            <canvas
+                class="hero-canvas"
+                id="heroCanvas"
+            ></canvas>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Panel 0: Intro (0% scroll) -->
+        <div class="hero-panel" id="panel0">
+            <div class="panel-inner panel-left">
+                <span class="label">SMARTWATCH COLLECTION</span>
+                <h1 class="heading">
+                    <span class="heading-line"><span class="heading-word">BEYOND TIME.</span></span>
+                    <span class="heading-line"><span class="heading-word">BEYOND</span></span>
+                    <span class="heading-line"><span class="heading-word">EXPECTATION.</span></span>
+                </h1>
+                <p class="subheading">Designed for those who demand precision, elegance and performance in every moment.</p>
+                <div class="cta-row">
+                    <a href="#" class="btn btn-fill" id="btnExplore">
+                        <span>Explore Collection</span>
+                        <span class="btn-shine"></span>
+                    </a>
+                    <a href="#" class="btn btn-outline" id="btnDiscover">
+                        <span>Discover More</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 1: Identities (30% scroll) -->
+        <div class="hero-panel" id="panel1">
+            <div class="panel-inner panel-left">
+                <span class="label">THREE DISTINCT IDENTITIES</span>
+                <div class="identity-list">
+                    <div class="identity-row">
+                        <span class="identity-num">01</span>
+                        <div class="identity-info">
+                            <h3 class="identity-name">Midnight Black</h3>
+                            <div class="identity-accent"></div>
+                        </div>
+                    </div>
+                    <div class="identity-row">
+                        <span class="identity-num">02</span>
+                        <div class="identity-info">
+                            <h3 class="identity-name">Ocean Blue</h3>
+                            <div class="identity-accent"></div>
+                        </div>
+                    </div>
+                    <div class="identity-row">
+                        <span class="identity-num">03</span>
+                        <div class="identity-info">
+                            <h3 class="identity-name">Arctic White</h3>
+                            <div class="identity-accent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 2: Features (60% scroll) -->
+        <div class="hero-panel" id="panel2">
+            <div class="panel-inner panel-left">
+                <span class="label">CRAFTED FOR MOVEMENT</span>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        <h3 class="feature-title">Precision Engineering</h3>
+                        <p class="feature-desc">Swiss-grade movement with sub-millisecond accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1"/><path d="M7 12h10M7 8h6M7 16h8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+                        <h3 class="feature-title">Dynamic Display</h3>
+                        <p class="feature-desc">Always-on LTPO AMOLED with 2000 nits peak brightness.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></svg>
+                        <h3 class="feature-title">All-Day Performance</h3>
+                        <p class="feature-desc">72-hour battery with intelligent power management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel 3: Finale (90% scroll) -->
+        <div class="hero-panel" id="panel3">
+            <div class="panel-inner panel-center">
+                <h2 class="finale-heading">
+                    <span class="heading-line"><span class="heading-word finale-word">EVERY SECOND</span></span>
+                    <span class="heading-line"><span class="heading-word finale-word">MATTERS</span></span>
+                </h2>
+                <div class="cta-row cta-center">
+                    <a href="#" class="btn btn-glow" id="btnFinalExplore">
+                        <span>Explore Collection</span>
+                        <span class="glow-ring"></span>
+                    </a>
+                    <a href="#" class="btn btn-ghost" id="btnFinalDiscover">
+                        <span>Discover More</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Scroll-Scrubbed Background Watch Face -->
+    <section class="sec2" id="sec2">
+        <div class="sec2-video-wrap">
+            <canvas id="sec2Canvas" class="sec2-canvas"></canvas>
+            <div class="sec2-overlay"></div>
+        </div>
+        <div class="sec2-panels">
+            <div class="sec2-panel active" id="sec2Panel1">
+                <div class="sec2-panel-inner">
+                    <span class="label">ENGINE MOVEMENT</span>
+                    <h2 class="sec2-heading">PRECISION IN MOTION</h2>
+                    <p class="sec2-subheading">A calibrated mechanical heartbeat ticking with sub-millisecond accuracy, powered by your every gesture.</p>
+                </div>
+            </div>
+            <div class="sec2-panel" id="sec2Panel2">
+                <div class="sec2-panel-inner">
+                    <span class="label">SOLAR TECHNOLOGY</span>
+                    <h2 class="sec2-heading">POWERED BY LIGHT</h2>
+                    <p class="sec2-subheading">Intelligent solar absorption cell hidden beneath the dial, delivering infinite battery reserves from any light source.</p>
+                </div>
+            </div>
+            <div class="sec2-panel" id="sec2Panel3">
+                <div class="sec2-panel-inner">
+                    <span class="label">HOROLOGY DESIGN</span>
+                    <h2 class="sec2-heading">CRAFTED FOR ETERNITY</h2>
+                    <p class="sec2-subheading">Housed in grade-5 aerospace titanium with dual-dome sapphire crystal. Built to endure, designed to stand out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Final Showcase & Pre-Order -->
+    <section class="sec3" id="sec3">
+        <div class="sec3-container">
+            <div class="sec3-content">
+                <span class="sec3-label">THE LEGACY LIVES ON</span>
+                <h2 class="sec3-heading">OWN THE OMEGA EXPERIENCE</h2>
+                <p class="sec3-subheading">A masterpiece of precision, durability, and style. The culmination of pioneering spirit and timeless design, crafted to accompany you on every journey.</p>
+                <div class="sec3-cta">
+                    <a href="#" class="btn btn-dark-fill">
+                        <span>Configure Yours</span>
+                    </a>
+                    <a href="#" class="btn btn-dark-outline">
+                        <span>Find a Boutique</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sec3-image-wrap">
+                <img src="watchimg.png" alt="Omega Seamaster Special Edition" class="sec3-image">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
