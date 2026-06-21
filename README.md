@@ -51,7 +51,7 @@ This project was developed using a combination of:
 
 ## 🌐 Live Demo
 
-Demo: https://omegawatch.netlify.app/
+Demo: https://samyak2501.github.io/Omega-Watch/
 
 ## 📁 Project Structure
 
