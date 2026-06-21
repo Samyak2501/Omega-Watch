@@ -4,6 +4,7 @@
    
    No autoplay. No loop. No canvas. No frames.
    Video is scroll-controlled with smooth interpolation.
+   Triggering fresh GitHub Actions deployment
    ============================================ */
 
 (function () {
